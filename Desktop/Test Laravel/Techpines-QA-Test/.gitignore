@@ -1,3 +1,8 @@
+
+# ignora tudo acima da raiz do projeto
+/*
+!/C:\Users\Pichau\Desktop\Test Laravel\Techpines-QA-Test/
+
 *.log
 .DS_Store
 .env
