@@ -22,15 +22,16 @@ It was created as part of a technical challenge for the QA Analyst position at T
 ### Setup
 
 1. Clone the repository:
-
-   ```bash
    git clone https://github.com/QAMilenaTorres/Techpines-QA-Test.git
    cd Techpines-QA-Test
+
 2. Install dependencies:   
 composer install
+
 3. Copy the environment file and generate the app key:
 cp .env.example .env
 php artisan key:generate
+
 4. Run the tests:
 php artisan test
 
