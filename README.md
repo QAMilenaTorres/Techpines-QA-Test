@@ -22,7 +22,7 @@ It was created as part of a technical challenge for the QA Analyst position at T
 ### Setup
 
 1. Clone the repository:
-   git clone https://github.com/QAMilenaTorres/Techpines-QA-Test.git
+   git clone https://github.com/QAMilenaTorres/Techpines-QA-Test.git  
    cd Techpines-QA-Test
 
 2. Install dependencies:   
