@@ -28,16 +28,13 @@ It was created as part of a technical challenge for the QA Analyst position at T
    cd Techpines-QA-Test
    
 2. Install dependencies:
- ```bash
     composer install
 
-3. Copy the environment file and generate the app key:
- ```bash   
+3. Copy the environment file and generate the app key:  
     cp .env.example .env   
     php artisan key:generate
 
 4. Run the tests:
- ```bash
     php artisan test
 
 
