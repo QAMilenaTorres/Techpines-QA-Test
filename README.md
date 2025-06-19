@@ -24,5 +24,27 @@ It was created as part of a technical challenge for the QA Analyst position at T
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YourUsername/Techpines-QA-Test.git
+   git clone https://github.com/QAMilenaTorres/Techpines-QA-Test.git
    cd Techpines-QA-Test
+   
+2. Install dependencies:
+composer install
+
+3. Copy the environment file and generate the app key:
+cp .env.example .env
+php artisan key:generate
+
+4. Run the tests:
+php artisan test
+
+
+Notes
+
+    No real backend or database is implemented — API calls are simulated in tests.
+
+    The project is prepared to demonstrate knowledge in test automation with Laravel.
+
+
+Author
+
+Milena Torres
