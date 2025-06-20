@@ -143,16 +143,16 @@ Este projeto utiliza o framework Laravel e os testes foram desenvolvidos usando 
 
 ## 🗂️ Estrutura do Projeto
 
-Techpines-QA-Test/
-├── README.md
-├── tests/
-│ └── Feature/
-│ └── ClienteApiTest.php
-├── docs/
-│ └── Plano_de_Testes.md
-├── .env.example
-├── composer.json
-└── ...
+Techpines-QA-Test/   
+├── README.md   
+├── tests/   
+│ └── Feature/   
+│ └── ClienteApiTest.php   
+├── docs/    
+│ └── Plano_de_Testes.md    
+├── .env.example   
+├── composer.json   
+└── ...   
 
 ---
 
