@@ -148,8 +148,6 @@ Este roteiro contempla um total de **47 casos de teste manuais**, distribuídos 
 | 4. Casos de Teste Extras e de Erro | 4       | 8.51%       |
 | **Total Geral**                | **47**      | **100%**    |
 
-![Gráfico contendo a porcentagem e prioridade dos casos de testes](https://drive.google.com/file/d/1t84LkJlFflN8a67VyLsPuRjlSKoNYAvL/view?usp=drive_link)
-
 ---
 
 Esta distribuição amplia a cobertura dos testes para abranger detalhadamente as validações de entrada (campos), os fluxos principais, a usabilidade dos filtros e paginação, além de tratamento de erros, garantindo a robustez da funcionalidade.
