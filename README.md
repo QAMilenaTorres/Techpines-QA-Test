@@ -121,3 +121,10 @@ Techpines-QA-Test/
 ├── .env.example
 ├── composer.json
 └── ...
+
+---
+
+## ⚠️ Observação:
+- A solução não utiliza Docker ou Laravel Sail, pois o foco foi direcionado para garantir a clareza, funcionalidade e fácil execução dos testes em qualquer ambiente PHP configurado. A escolha visa facilitar a avaliação direta dos testes e priorizar a compatibilidade com setups locais sem dependências adicionais.
+
+## Boa sorte pra nós 🖤! ##
