@@ -7,7 +7,7 @@ O foco está na validação dos campos, regras de autenticação, fluxos adminis
 
 ---
 
-## 🛠️ Ferramentas usadas no Projeto
+## 🔧 Ferramentas usadas no Projeto
 - PHP
 - Artisan
 - Visual Studio Code
