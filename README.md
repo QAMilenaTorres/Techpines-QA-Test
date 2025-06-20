@@ -7,6 +7,18 @@ O foco está na validação dos campos, regras de autenticação, fluxos adminis
 
 ---
 
+## 🛠️ Ferramentas usadas no Projeto
+- PHP
+- Artisan
+- Visual Studio Code
+- Navegador Mozilla Firefox
+- GitHub
+- Git Bash
+- Powershell (Para instalar o PHP, Artisan e Composer)
+- Google Drive
+
+---
+
 ## 🎯 Objetivo do Projeto
 
 Automatizar e validar os fluxos críticos do sistema, simulando a API por meio de testes com Laravel, para garantir a confiabilidade da aplicação.
@@ -88,7 +100,7 @@ Este projeto utiliza o framework Laravel e os testes foram desenvolvidos usando 
    Acesse o GitHub e copie a URL do projeto. No terminal, digite:  
    git clone [Github link do repositório](https://github.com/QAMilenaTorres/Techpines-QA-Test.git)
    Depois entre na pasta do projeto com o comando:  
-   cd Techpines-QA-Test
+   cd com o caminho completo da pasta entre aspas ""
 
 2. Instale as dependências do projeto:  
    Digite no terminal:  
@@ -121,10 +133,11 @@ Este projeto utiliza o framework Laravel e os testes foram desenvolvidos usando 
 
 ### Dicas importantes
 
-- Se aparecer erro sobre "openssl", ative essa extensão no seu `php.ini`.
-- Os testes são simulados com fakes, então **não precisa rodar um backend de verdade**.
+- Se aparecer erro sobre "openssl", ative essa extensão no seu `php.ini` removendo o ;
+- Os testes são simulados com fakes, então **não precisa rodar um backend de verdade**
 - Você pode rodar apenas os testes de funcionalidade com o comando:  
   php artisan test --testsuite=Feature
+- O Laravel não possui uma interface gráfica, aconselho utilizar o VS Code Studio para melhor visualização do código e, pode ser utilizado para rodar o terminal caso não tenha o Git Bash na máquina
 
 ---
 
