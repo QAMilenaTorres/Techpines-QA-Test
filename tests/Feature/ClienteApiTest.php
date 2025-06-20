@@ -395,18 +395,6 @@ class ClienteApiTest extends TestCase
         $this->assertEquals(200, $response->status());
         $this->assertCount(2, $response->json());
     }
-}
-
-
-
-namespace Tests\Feature;
-
-use Illuminate\Support\Facades\Http;
-use Tests\TestCase;
-
-class ClienteApiTest extends TestCase
-{
-    // ... [todos os testes anteriores aqui] ...
 
     /**
      * ======================
@@ -473,5 +461,80 @@ class ClienteApiTest extends TestCase
         $this->assertEquals(429, $response->status());
         $this->assertEquals('Muitas requisicoes. Tente novamente mais tarde.', $response['message']);
     }
-}
 
+    public function test_requisicao_com_metodo_incorreto_retorna_405()
+    {
+        Http::fake([
+            'https://api.ficticia.local/clientes' => Http::response([
+                'message' => 'Metodo nao permitido'
+            ], 405)
+        ]);
+
+        $response = Http::put('https://api.ficticia.local/clientes', [
+            'nome' => 'Teste Invalido'
+        ]);
+
+        $this->assertEquals(405, $response->status());
+        $this->assertEquals('Metodo nao permitido', $response['message']);
+    }
+
+    public function test_requisicao_com_cabecalho_incorreto_retorna_400()
+    {
+        Http::fake([
+            'https://api.ficticia.local/clientes' => Http::response([
+                'message' => 'Cabecalho invalido'
+            ], 400)
+        ]);
+
+        $response = Http::withHeaders(['X-Custom-Header' => 'invalid'])->post('https://api.ficticia.local/clientes', [
+            'nome' => 'Teste Cabecalho'
+        ]);
+
+        $this->assertEquals(400, $response->status());
+        $this->assertEquals('Cabecalho invalido', $response['message']);
+    }
+
+    public function test_requisicao_com_corpo_incorreto_retorna_422()
+    {
+        Http::fake([
+            'https://api.ficticia.local/clientes' => Http::response([
+                'message' => 'Corpo da requisicao invalido'
+            ], 422)
+        ]);
+
+        $response = Http::post('https://api.ficticia.local/clientes', [
+            'nome' => '' // Nome vazio
+        ]);
+
+        $this->assertEquals(422, $response->status());
+        $this->assertEquals('Corpo da requisicao invalido', $response['message']);
+    }
+
+    public function test_requisicao_com_query_string_incorreta_retorna_400()
+    {
+        Http::fake([
+            'https://api.ficticia.local/clientes?invalid=query' => Http::response([
+                'message' => 'Query string invalida'
+            ], 400)
+        ]);
+
+        $response = Http::get('https://api.ficticia.local/clientes?invalid=query');
+
+        $this->assertEquals(400, $response->status());
+        $this->assertEquals('Query string invalida', $response['message']);
+    }
+
+    public function test_requisicao_com_tempo_limite_excedido_retorna_504()
+    {
+        Http::fake([
+            'https://api.ficticia.local/clientes' => Http::response([
+                'message' => 'Tempo limite excedido'
+            ], 504)
+        ]);
+        $response = Http::timeout(1)->post('https://api.ficticia.local/clientes', [
+            'nome' => 'Teste Timeout'
+        ]);
+        $this->assertEquals(504, $response->status());
+        $this->assertEquals('Tempo limite excedido', $response['message']);
+    }
+}
