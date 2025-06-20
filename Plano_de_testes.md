@@ -148,7 +148,7 @@ Este roteiro contempla um total de **47 casos de teste manuais**, distribuídos 
 | 4. Casos de Teste Extras e de Erro | 4       | 8.51%       |
 | **Total Geral**                | **47**      | **100%**    |
 
-![Gráfico contendo a porcentagem e prioridade dos casos de testes]("C:\Users\Pichau\Desktop\b470ed14-f80e-4320-8cf9-86e9d5b2c816.png")
+![Gráfico contendo a porcentagem e prioridade dos casos de testes]("https://drive.google.com/file/d/1t84LkJlFflN8a67VyLsPuRjlSKoNYAvL/view?usp=drive_link")
 
 ---
 
