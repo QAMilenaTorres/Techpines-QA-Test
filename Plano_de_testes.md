@@ -155,12 +155,12 @@ Esta distribuição amplia a cobertura dos testes para abranger detalhadamente a
 ## 📁 Estrutura Recomendada
 
 Techpines-QA-Test/
-├── README.md
-├── tests/
-│ └── Feature/
-│ └── ClienteApiTest.php
-├── docs/
-│ └── Plano_de_Testes.md
-├── .env.example
-├── composer.json
-└── ...
+├── README.md   
+├── tests/   
+│ └── Feature/   
+│ └── ClienteApiTest.php   
+├── docs/   
+│ └── Plano_de_Testes.md   
+├── .env.example   
+├── composer.json   
+└── ...   
