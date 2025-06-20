@@ -78,6 +78,7 @@ Este projeto utiliza o framework Laravel e os testes foram desenvolvidos usando 
 - Ter o Composer instalado (gerenciador de dependências do PHP)
 - Ter um terminal (como PowerShell ou Git Bash) e acesso à internet
 - Ter o Laravel instalado ou o projeto clonado
+- O código com toda a automação está em Tests>Feature>ClienteApiTeste.php
 
 ---
 
@@ -104,8 +105,8 @@ Este projeto utiliza o framework Laravel e os testes foram desenvolvidos usando 
 
 5. Execute todos os testes:  
    Digite:  
-   php artisan test
-   *O código com toda a automação está em Tests>Feature>ClienteApiTeste.php
+   php artisan test   
+   O código com toda a automação está em Tests>Feature>ClienteApiTeste.php
    Você verá os testes sendo executados e os resultados aparecendo na tela.
 
 7. (Opcional) Para rodar apenas uma classe de teste específica:  
