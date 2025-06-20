@@ -26,17 +26,34 @@ Automatizar e validar os fluxos críticos do sistema, simulando a API por meio d
 
 ## 📋 Lista Resumida dos Casos de Teste Selecionados
 
-1. Cadastro com todos os campos obrigatórios preenchidos corretamente (Crítico)  
-2. Cadastro com CNPJ inválido (Crítico)  
-3. Cadastro com CNPJ já existente (Crítico)  
-4. Cadastro sem autenticação (Crítico)  
-5. Aprovação de cadastro pelo administrador (Crítico)  
-6. Rejeição de cadastro pelo administrador (Alto)  
-7. Filtros básicos e paginação na listagem (Alto/Médio)  
-8. Filtros combinados e ordenação (Médio)  
-9. Tratamento de erro genérico (500) (Médio)  
-10. Rate limiting e restrições de requisição (429) (Baixo)  
-11. Acesso indevido (403) e recurso inexistente (404) (Baixo)
+📋 Lista Resumida dos Casos de Teste Selecionados
+
+- Cadastro com todos os campos obrigatórios preenchidos corretamente (Crítico)
+- Cadastro com CNPJ inválido (Crítico)
+- Cadastro com CNPJ já existente (Crítico)
+- Cadastro sem autenticação (Crítico)
+- Aprovação de cadastro pelo administrador (Crítico)
+- Rejeição de cadastro pelo administrador (Alto)
+- Filtros básicos e paginação na listagem (Alto/Médio)
+- Filtros combinados e ordenação (Médio)
+- Tratamento de erro genérico (500) (Médio)
+- Rate limiting e restrições de requisição (429) (Baixo)
+- Acesso indevido (403) e recurso inexistente (404) (Baixo)
+- Validação de nome com espaços em branco (Crítico)
+- Validação de e-mail com espaços e formato errado (Crítico)
+- Validação de e-mail duplicado (Crítico)
+- Validação de telefone com letras (Crítico)
+- Validação de telefone duplicado (Crítico)
+- Validação de CNPJ com letras (Crítico)
+- Validação de CNPJ com números a mais ou a menos (Crítico)
+- Inserção de CPF no campo CNPJ (Crítico)
+- Usuário autenticado pode cadastrar (Crítico)
+- Usuário não autenticado não pode cadastrar (Crítico)
+- Requisição com método incorreto (405) (Médio)
+- Requisição com cabeçalho incorreto (400) (Médio)
+- Requisição com query string incorreta (400) (Médio)
+- Requisição com corpo incorreto (422) (Médio)
+- Requisição com tempo limite excedido (504) (Baixo)
 
 ---
 
@@ -130,4 +147,4 @@ Techpines-QA-Test/
 
 ---
 
-## Boa sorte pra nós :) 🖤 ##
+## Boa sorte pra nós :) 🖤
