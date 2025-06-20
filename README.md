@@ -104,14 +104,15 @@ Este projeto utiliza o framework Laravel e os testes foram desenvolvidos usando 
 
 5. Execute todos os testes:  
    Digite:  
-   php artisan test  
+   php artisan test
+   *O código com toda a automação está em Tests>Feature>ClienteApiTeste.php
    Você verá os testes sendo executados e os resultados aparecendo na tela.
 
-6. (Opcional) Para rodar apenas uma classe de teste específica:  
+7. (Opcional) Para rodar apenas uma classe de teste específica:  
    Digite:  
    php artisan test --filter=ClienteApiTest
 
-7. (Opcional) Para rodar apenas um método de teste dentro de uma classe:  
+8. (Opcional) Para rodar apenas um método de teste dentro de uma classe:  
    Digite:  
    php artisan test --filter=nome_do_metodo
 
