@@ -154,7 +154,7 @@ Esta distribuição amplia a cobertura dos testes para abranger detalhadamente a
 
 ## 📁 Estrutura Recomendada
 
-Techpines-QA-Test/
+Techpines-QA-Test/   
 ├── README.md   
 ├── tests/   
 │ └── Feature/   
