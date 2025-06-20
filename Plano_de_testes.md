@@ -67,12 +67,19 @@ Garantir que a funcionalidade de cadastro e listagem de clientes no ERP fictíci
 
 ## 📊 Cobertura por Prioridade
 
-| Prioridade | Quantidade de Casos | % Estimado |
-|------------|---------------------|------------|
-| Crítico    | 6                   | 25%        |
-| Alta       | 6                   | 25%        |
-| Média      | 8                   | 33%        |
-| Baixa      | 4                   | 17%        |
+Este roteiro contempla um total de **47 casos de teste manuais**, distribuídos conforme abaixo:
+
+| Categoria                      | Nº de Casos | % do Total  |
+|-------------------------------|-------------|-------------|
+| 1. Casos de Teste Principais   | 6           | 12.77%      |
+| 2. Casos de Teste de Validação | 28          | 59.57%      |
+| 3. Casos de Teste de Paginação e Filtros | 9 | 19.15%      |
+| 4. Casos de Teste Extras e de Erro | 4       | 8.51%       |
+| **Total Geral**                | **47**      | **100%**    |
+
+---
+
+Esta distribuição amplia a cobertura dos testes para abranger detalhadamente as validações de entrada (campos), os fluxos principais, a usabilidade dos filtros e paginação, além de tratamento de erros, garantindo a robustez da funcionalidade.
 
 ---
 
